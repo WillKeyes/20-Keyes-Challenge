@@ -1,0 +1,138 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.about-me {
+  display: flex;
+  justify-content:space-evenly;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; 
+  color: #333; 
+  line-height: 1.6; 
+}
+
+.sidebar {
+  position: absolute;
+  font-size: 15pt;
+  top: 300px; 
+  padding: 10px;
+  width: 220px;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin: 0 0 20px 0;
+}
+
+.lower-sidebar {
+  position: absolute;
+  font-size: 15pt;
+  top: 950px; 
+  left: 15px;
+  padding: 10px;
+  width: 250px; 
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.lower-sidebar h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin: 0 0 20px 0;
+}
+.container {
+  padding-left: 250px; /* So container doesnt interfere with sidebar */
+  position: relative;
+  padding-left: 30px;
+  margin-top: 20px; /* Add some space below the header */
+}
+/* Adjust blue line position to align with new container */
+.container::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #24568c;
+}
+.row {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap; /* makes sure there isnt any horizontal overlap */
+  justify-content: center; /* Centers the boxes*/
+}
+body {
+  margin: 0px 0px 0px 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; /* Center the main content */
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+header {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #1161d8;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.header-left {
+  font-size: 15pt;
+}
+.header-right {
+  display: flex;
+}
+.nav-link {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.1s, color 0.1s;
+}
+.nav-link:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.box {
+  margin: 10px;
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+  background-color: #984caf;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+   border-radius: 5px;  /*adds corners to the boxes */
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+.box.large {
+  width: 1000px;
+  height: 400px;
+  font-size: 1.5em;
+}
+.box:hover {
+  background-color: rgba(223, 146, 237, 0.9);
+  transform: translateY(-7px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.904);
+}
+
+#contact {
+
+padding: 20px;
+background-color: #f9f9f9; 
+}
+
